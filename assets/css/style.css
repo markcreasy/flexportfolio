@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root {
+  --navy-color: #232d37;
+  --light-blue-color: #4c8bb0;
+  --gray-color: #f8f9fb;
+  --highlight-color: #d0edf2;
+}
+
+body{
+  /* background-color: aliceblue; */
+  background-color: var(--navy-color);
+  color:lightgray;
+}
+
+header{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+header a{
+  text-decoration: none;
+}
+
+.logo{
+  color: aliceblue;
+  text-transform: uppercase;
+  font-family: 'Rock Salt', cursive;
+  font-size: 45px;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a{
+  color: white;
+  padding-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover{
+  color: var(--light-blue-color);
+}
+
+.hero{
+  display:flex;
+  padding-top: 100px;
+  justify-content: center;
+  height:550px;
+  align-items: center;
+}
+
+.hero img{
+  height:100%;
+  border-radius: 50%;
+  margin-right: 100px;
+}
+
+.hero .cta{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.hero h2{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hero h2 span{
+  font-family: 'Rock Salt', cursive;
+  color: white;
+}
+
+@media screen and (max-width: 1050px) {
+  header .container{
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align:center;
+  }
+
+  header h1{
+    text-align: center;
+  }
+
+  header nav{
+    justify-content: space-around;
+  }
+
+  header nav ul{
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 5px 0;
+  }
+
+  header nav ul li a{
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo{
+    font-size: 50px;
+  }
+
+  header nav ul{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  header nav ul li{
+    margin: 5px 0;
+  }
+}
