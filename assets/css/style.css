@@ -38,7 +38,7 @@ header a{
   color: aliceblue;
   text-transform: uppercase;
   font-family: 'Rock Salt', cursive;
-  font-size: 45px;
+  font-size: 27px;
 }
 
 header nav{
@@ -59,16 +59,17 @@ header nav ul li a{
   text-transform: uppercase;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover, .logo:hover{
   color: var(--light-blue-color);
 }
 
 .hero{
   display:flex;
-  padding-top: 100px;
+  margin: 100px 0;
   justify-content: center;
   height:550px;
   align-items: center;
+  font-weight: 500;
 }
 
 .hero img{
@@ -83,15 +84,90 @@ header nav ul li a:hover{
   font-family: 'Ubuntu', sans-serif;
 }
 
-.hero h2{
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
 .hero h2 span{
   font-family: 'Rock Salt', cursive;
   color: white;
+  font-size:70px;
 }
+
+#work{
+  display:flex;
+  justify-content: center;
+}
+
+.project-container{
+  display: flex;
+  width:100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top:50px;
+}
+
+.project{
+  flex: 40%;
+  height:400px;
+  border: 3px solid white;
+  background-color: var(--light-blue-color);
+  margin: 20px;
+  background-size: 100%;
+  background-position: center;
+  transition: all .5s;
+}
+
+.project-spotlight{
+  flex:100%;
+}
+
+#lindabensoninteriors{
+  background-image: url('../images/lindabensoninteriors.png');
+}
+
+#sprucerunlutheran{
+  background-image: url('../images/sprucerunlutheran.png');
+}
+
+.project .info{
+  height:100%;
+  transition: all .5s;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project .info h3{
+  font-family: 'Rock Salt', 'Ubuntu', sans-serif;
+  font-size: 30px;
+}
+
+.project .info h3, .project .info p{
+  transition: all .5s;
+}
+
+.project-spotlight .info h3{
+  font-size:40px;
+  transition: all .5s;
+}
+
+.project .info:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.project:hover{
+  background-size: 120%;
+}
+
+.project .info:hover p{
+  color:white;
+}
+
+.project .info:hover h3{
+  color: var(--light-blue-color);
+}
+
 
 @media screen and (max-width: 1050px) {
   header .container{
