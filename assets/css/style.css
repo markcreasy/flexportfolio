@@ -107,7 +107,7 @@ header nav ul li a:hover, .logo:hover{
 .project{
   flex: 40%;
   height:400px;
-  border: 3px solid white;
+  /* border: 3px solid white; */
   background-color: var(--light-blue-color);
   margin: 20px;
   background-size: 100%;
@@ -140,19 +140,21 @@ header nav ul li a:hover, .logo:hover{
   transition: all .5s;
   font-family: 'Ubuntu', sans-serif;
   color: rgba(0, 0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .project .info h3{
   font-family: 'Rock Salt', 'Ubuntu', sans-serif;
   font-size: 30px;
-  color: var(--light-blue-color);
+  /* color: var(--light-blue-color); */
+  color: lightgray;
   text-shadow: 0px 0px 90px white;
 }
 
 .project .info p{
   color:rgba(0,0,0,0);
   transition: all .5s;
+  height: 0;
 }
 
 .project .info h3, .project .info p{
@@ -165,7 +167,7 @@ header nav ul li a:hover, .logo:hover{
 }
 
 .project:hover .info{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   flex-grow: 1;
 }
@@ -176,6 +178,7 @@ header nav ul li a:hover, .logo:hover{
 
 .project .info:hover p{
   color:white;
+  height:auto;
 }
 
 .project .info:hover h3{
