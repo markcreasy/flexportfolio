@@ -76,6 +76,8 @@ header nav ul li a:hover, .logo:hover{
   height:100%;
   border-radius: 50%;
   margin-right: 100px;
+  box-shadow: 0px 0px 60px var(--light-blue-color);
+  border: 5px solid var(--light-blue-color);
 }
 
 .hero .cta{
@@ -86,8 +88,9 @@ header nav ul li a:hover, .logo:hover{
 
 .hero h2 span{
   font-family: 'Rock Salt', cursive;
-  color: white;
+  color: var(--light-blue-color);
   font-size:70px;
+  /* text-shadow: 0px 0px 50px var(--light-blue-color); */
 }
 
 #work{
@@ -117,6 +120,7 @@ header nav ul li a:hover, .logo:hover{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .project-spotlight{
@@ -147,8 +151,8 @@ header nav ul li a:hover, .logo:hover{
   font-family: 'Rock Salt', 'Ubuntu', sans-serif;
   font-size: 30px;
   /* color: var(--light-blue-color); */
-  color: lightgray;
-  text-shadow: 0px 0px 90px white;
+  color: white;
+  text-shadow: 0px 0px 90px lightgray;
 }
 
 .project .info p{
@@ -176,13 +180,14 @@ header nav ul li a:hover, .logo:hover{
   background-size: 120%;
 }
 
-.project .info:hover p{
+.project:hover p{
   color:white;
   height:auto;
 }
 
-.project .info:hover h3{
+.project:hover h3{
   color: var(--light-blue-color);
+  text-shadow: 0px 0px 90px white;
 }
 
 
