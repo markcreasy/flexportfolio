@@ -11,8 +11,11 @@
   --highlight-color: #d0edf2;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
-  /* background-color: aliceblue; */
   background-color: var(--navy-color);
   color:lightgray;
 }
@@ -141,8 +144,8 @@ header nav ul li a:hover, .logo:hover{
 }
 
 .project .info{
-  height:auto;
   width:100%;
+  height:150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +180,7 @@ header nav ul li a:hover, .logo:hover{
 .project:hover .info{
   background-color: rgba(0, 0, 0, 0.90);
   cursor: pointer;
-  flex-grow: 1;
+  height: 100%;
 }
 
 .project:hover{
