@@ -39,7 +39,6 @@ header a{
 
 .logo{
   color: aliceblue;
-  text-transform: uppercase;
   font-family: 'Rock Salt', cursive;
   font-size: 27px;
 }
@@ -57,9 +56,9 @@ header ul{
 header nav ul li a{
   color: white;
   padding-left: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 800;
-  text-transform: uppercase;
+  font-size:18px;
 }
 
 header nav ul li a:hover, .logo:hover{
@@ -101,6 +100,27 @@ header nav ul li a:hover, .logo:hover{
 #work{
   display:flex;
   justify-content: center;
+}
+
+.work-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.work-header .line{
+  width:35%;
+  height:2px;
+  background-color: gray;
+}
+
+.work-header .header{
+  width:20%;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .project-container{
@@ -269,6 +289,22 @@ footer .copyright{
     margin-top: 20px;
     text-align: center;
   }
+
+  .project-container{
+    justify-content: center;
+  }
+
+  .work-header{
+    width: 80%;
+  }
+
+  .work-header .line{
+    width:30%;
+  }
+
+  .work-header .header{
+    width:40%;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -302,5 +338,15 @@ footer .copyright{
 
   footer{
     margin-top:0;
+  }
+
+  .work-header{
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .work-header .line, .work-header .header{
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
