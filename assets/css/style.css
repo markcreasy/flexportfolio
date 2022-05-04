@@ -94,7 +94,6 @@ header nav ul li a:hover, .logo:hover{
   font-family: 'Rock Salt', cursive;
   color: var(--light-blue-color);
   font-size:70px;
-  /* text-shadow: 0px 0px 50px var(--light-blue-color); */
 }
 
 #work{
@@ -294,6 +293,21 @@ footer .copyright{
     justify-content: center;
   }
 
+  .project .info{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+  }
+
+  .project .info h3{
+    color: var(--light-blue-color);
+    text-shadow: none;
+  }
+
+  .project .info p{
+    color:white;
+    height:auto;
+  }
+
   .work-header{
     width: 80%;
   }
@@ -305,6 +319,7 @@ footer .copyright{
   .work-header .header{
     width:40%;
   }
+
 }
 
 @media screen and (max-width: 575px) {
