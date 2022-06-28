@@ -162,6 +162,14 @@ header nav ul li a:hover, .logo:hover{
   background-image: url('../images/sprucerunlutheran.png');
 }
 
+#deep-thoughts{
+  background-image: url('../images/deep-thoughts.png');
+}
+
+#shop-shop{
+  background-image: url('../images/shop-shop.png');
+}
+
 .project .info{
   width:100%;
   height:150px;
