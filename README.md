@@ -8,7 +8,8 @@ A portfolio website to showcase my work
 * CSS
 
 ## Website
-https://markcreasy.github.io/flexportfolio/
+- https://markcreasy.me
+- https://markcreasy.github.io/flexportfolio/
 
 ## Contribution
 Made with ❤️ by Mark Creasy
